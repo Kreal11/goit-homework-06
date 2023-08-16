@@ -34,10 +34,38 @@ svg {
   justify-content: center;
 }
 
-.container {
+/* .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+} */
+
+/* phones screen */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* tablets screen */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* daesktop screen */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .navigation {
@@ -94,7 +122,6 @@ input {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  width: 1158px;
   margin: 0 auto;
   padding: 24px 0px;
   border-bottom: 1px solid var(--cornflower);
@@ -332,11 +359,54 @@ body {
   background-color: var(--white-color);
 }
 
+/* Advantages */
+
+/* Phone Screen */
+
 .advantages {
-  padding: 120px 0;
+  width: 396px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.advantage-icon-container {
+svg {
+  display: none;
+}
+
+.advantage-item:not(:last-child) {
+  margin-bottom: 72px;
+  display: block;
+}
+
+.advantage-header {
+  color: var(--navyblue-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  align-self: stretch;
+  margin-bottom: 8px;
+}
+
+.advantage-descr {
+  color: var(--slate-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  align-self: stretch;
+}
+
+/* .list-advantages {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+} */
+
+/* .advantage-icon-container {
   margin-bottom: 8px;
   padding: 24px 0px;
   display: flex;
@@ -344,43 +414,35 @@ body {
   align-items: center;
   background-color: var(--cloud-color);
   border-radius: 4px;
-}
+} */
 
-.advantage-item {
+/* .advantage-item {
   width: calc((100% - 72px) / 4);
-}
+} */
 
-/* Advantages */
-
-.advantage-header {
+/* .advantage-header {
   color: var(--navyblue-color);
 
-  /* Header 3 */
+
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2; 
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-}
+} */
 
-.advantage-descr {
+/* .advantage-descr {
   color: var(--slate-color);
 
-  /* Body */
+
   font-family: Roboto;
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5; 
   letter-spacing: 0.02em;
   margin-top: 8px;
-}
-
-.list-advantages {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
+} */
 
 /* Competences */
 

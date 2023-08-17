@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Effective Solutions
-for Your Business"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Effective Solutions for Your Business" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -154,14 +151,18 @@ for Your Business"
 
       <!-- Description of work via photos (What Are We Doing) -->
 
-      <!-- <section class="competences">
-        <div class="container">
+      <section class="competences">
+        <div class="container container-competences">
           <h2 class="competences-header-text">What are we doing</h2>
           <ul class="list list-competences">
             <li class="competence-item">
               <img
                 class="image"
-                src="./images/main/computer.jpg"
+                srcset="
+                  ./images/main/competences/computer.jpg     1x,
+                  ./images/main/competences/computer-@2x.jpg 2x
+                "
+                src="./images/main/competences/computer.jpg"
                 alt="Computer shows profile statistics"
                 width="360"
                 height="300"
@@ -170,7 +171,11 @@ for Your Business"
             <li class="competence-item">
               <img
                 class="image"
-                src="./images/main/phone.jpg"
+                srcset="
+                  ./images/main/competences/phone.jpg     1x,
+                  ./images/main/competences/phone-@2x.jpg 2x
+                "
+                src="./images/main/competences/phone.jpg"
                 alt="Smartphone shows a few chats"
                 width="360"
                 height="300"
@@ -179,7 +184,11 @@ for Your Business"
             <li class="competence-item">
               <img
                 class="image"
-                src="./images/main/phoneandcomputer.jpg"
+                srcset="
+                  ./images/main/competences/phone-and-computer.jpg     1x,
+                  ./images/main/competences/phone-and-computer-@2x.jpg 2x
+                "
+                src="./images/main/competences/phone-and-computer.jpg"
                 alt="Smartphone is synchronized with computer"
                 width="360"
                 height="300"
@@ -187,24 +196,28 @@ for Your Business"
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Team members -->
 
-      <!-- <section class="team-members">
+      <section class="team-members">
         <div class="container container-members">
           <h2 class="team-members-header">Our Team</h2>
           <ul class="list list-members">
             <li class="member-item">
               <img
-                class="image"
-                src="./images/main/productdesigner.jpg"
+                class="image-member"
+                srcset="
+                  ./images/main/team/product-des.jpg     1x,
+                  ./images/main/team/product-des-@2x.jpg 2x
+                "
+                src="./images/main/team/product-des.jpg"
                 alt="Photo of Product Designer"
                 width="264"
                 height="260"
               />
               <div class="member-info">
-                <h3 class="member">Mark Guerrero</h3>
+                <h3 class="member-title">Mark Guerrero</h3>
                 <p class="member-position">Product Designer</p>
                 <ul class="member-icons-list">
                   <li class="member-icons-item">
@@ -240,14 +253,18 @@ for Your Business"
             </li>
             <li class="member-item">
               <img
-                class="image"
-                src="./images/main/frontend.jpg"
+                class="image-member"
+                srcset="
+                  ./images/main/team/frontend.jpg     1x,
+                  ./images/main/team/frontend-@2x.jpg 2x
+                "
+                src="./images/main/team/frontend.jpg"
                 alt="Photo of Frontend Developer"
                 width="264"
                 height="260"
               />
               <div class="member-info">
-                <h3 class="member">Tom Ford</h3>
+                <h3 class="member-title">Tom Ford</h3>
                 <p class="member-position">Frontend Developer</p>
                 <ul class="member-icons-list">
                   <li class="member-icons-item">
@@ -283,14 +300,18 @@ for Your Business"
             </li>
             <li class="member-item">
               <img
-                class="image"
-                src="./images/main/marketing.jpg"
+                class="image-member"
+                srcset="
+                  ./images/main/team/marketing.jpg     1x,
+                  ./images/main/team/marketing-@2x.jpg 2x
+                "
+                src="./images/main/team/marketing.jpg"
                 alt="Photo of Marketer"
                 width="264"
                 height="260"
               />
               <div class="member-info">
-                <h3 class="member">Camila Garcia</h3>
+                <h3 class="member-title">Camila Garcia</h3>
                 <p class="member-position">Marketing</p>
                 <ul class="member-icons-list">
                   <li class="member-icons-item">
@@ -326,14 +347,18 @@ for Your Business"
             </li>
             <li class="member-item">
               <img
-                class="image"
-                src="./images/main/uidesigner.jpg"
+                class="image-member"
+                srcset="
+                  ./images/main/team/ui-designer.jpg     1x,
+                  ./images/main/team/ui-designer-@2x.jpg 2x
+                "
+                src="./images/main/team/ui-designer.jpg"
                 alt="Photo of UI Designer"
                 width="264"
                 height="260"
               />
               <div class="member-info">
-                <h3 class="member">Daniel Wilson</h3>
+                <h3 class="member-title">Daniel Wilson</h3>
                 <p class="member-position">UI Designer</p>
                 <ul class="member-icons-list">
                   <li class="member-icons-item">
@@ -369,11 +394,11 @@ for Your Business"
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Section Customers  -->
 
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -421,7 +446,7 @@ for Your Business"
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer and credo -->
@@ -569,5 +594,6 @@ for Your Business"
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
   </body>
 </html>

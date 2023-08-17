@@ -654,14 +654,18 @@ body {
 /* Customers section */
 
 .customers {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    padding: 96px 108px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0px;
   }
 }
 
@@ -692,6 +696,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .customers-list {
+    column-gap: 24px;
   }
 }
 
@@ -916,14 +921,45 @@ body {
   background-color: var(--navyblue-color);
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
-  flex-direction: column;
-  padding: 100px 0;
+  padding: 96px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0px;
+  }
 }
 
 .container-footer {
-  align-items: baseline;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container-footer {
+    align-items: baseline;
+    display: flex;
+    column-gap: 0px;
+  }
 }
 
 /* Logo and credo */
@@ -933,9 +969,8 @@ body {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
@@ -947,56 +982,61 @@ body {
   color: var(--cloud-color);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .credo {
   color: var(--cloud-color);
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
-  /* outline: 2px solid tomato; */
 }
 
+/* .credo {
+  color: var(--cloud-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+} */
+
 .container-logo-credo {
-  margin-right: 120px;
+  padding: 0px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Social container */
 
-.footer-container-social {
+/* .footer-container-social {
   margin-right: 80px;
-}
+} */
 
-.social-footer-title {
+/* .social-footer-title {
   color: var(--white-color);
-
-  /* Body Medium */
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-}
+} */
 
-.icons-footer-list {
+/* .icons-footer-list {
   list-style-type: none;
   display: flex;
   gap: 16px;
-}
+} */
 
-.icons-footer-item {
+/* .icons-footer-item {
   width: 40px;
   height: 40px;
-}
+} */
 
-.icons-footer-link {
+/* .icons-footer-link {
   background-color: var(--iris-color);
   border-radius: 50%;
   padding: 8px;
@@ -1006,61 +1046,58 @@ body {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.icons-footer-link:hover {
+/* .icons-footer-link:hover {
   background-color: var(--green-color);
-}
+} */
 
-.icons-footer-link:focus {
+/* .icons-footer-link:focus {
   background-color: var(--green-color);
-}
+} */
 
-.icon-footer-social {
+/* .icon-footer-social {
   fill: var(--cloud-color);
-}
+} */
 
 /* Subscribe container */
 
-.subscribe-title {
+/* .subscribe-title {
   color: var(--white-color);
-
-  /* Body Medium */
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-}
+} */
 
-.subscribe-form {
+/* .subscribe-form {
   display: flex;
   gap: 24px;
-}
+} */
 
-.subscribe-input {
+/* .subscribe-input {
   width: 264px;
   height: 40px;
   padding-left: 16px;
   color: var(--white-color);
   background: transparent;
   font-size: 12px;
-  line-height: 1.5; /* 200% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
   border: 1px solid var(--white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
+} */
 
-.subscribe-footer-button {
+/* .subscribe-footer-button {
   min-width: 165px;
   height: 40px;
   color: var(--white-color);
   text-align: center;
-  /* Button Text */
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
   background: var(--iris-color);
@@ -1070,11 +1107,11 @@ body {
   align-items: center;
   border: none;
   cursor: pointer;
-}
+} */
 
-.subscribe-icon {
+/* .subscribe-icon {
   margin-left: 16px;
-}
+} */
 
 /* Modal Window */
 

@@ -408,14 +408,14 @@ input {
 .contact-information-menu {
   margin-top: auto;
   font-style: normal;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
   margin-bottom: 48px;
 }
 
 .list-contacts-menu {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
   list-style-type: none;
   text-decoration: none;
 }

@@ -403,7 +403,7 @@ input {
   text-transform: capitalize;
 }
 
-.current-menu {
+.current-menu-item {
   color: var(--ocean-hover-focus);
 }
 

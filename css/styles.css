@@ -427,6 +427,7 @@ input {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .link-menu-email {

@@ -32,6 +32,7 @@ svg {
 .container-header {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* phones screen */
@@ -133,16 +134,9 @@ input {
   align-items: center;
   flex-shrink: 0;
   margin: 0 auto;
-  padding: 24px 0px;
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .header-main-page {
-    padding: 16px 0px;
-  }
 }
 
 .container-header {
@@ -217,18 +211,13 @@ input {
 
 .link-navigation {
   color: var(--navyblue-color);
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0px 26px 0px;
-}
-
-@media screen and (min-width: 758px) and (max-width: 1157.98px) {
-  .link-navigation {
-    padding: 24px 0px 31px 0px;
-  }
+  padding: 24px 0px 24px 0px;
 }
 
 .link-navigation:hover {

@@ -407,7 +407,7 @@ input {
   text-transform: capitalize;
 }
 
-.current-menu-item {
+.current-nav-menu {
   color: var(--ocean-hover-focus);
 }
 

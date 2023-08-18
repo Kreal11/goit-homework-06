@@ -387,7 +387,7 @@ input {
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
@@ -416,6 +416,7 @@ input {
 
 .list-contacts-menu {
   list-style-type: none;
+  text-decoration: none;
 }
 
 .link-menu-phone {

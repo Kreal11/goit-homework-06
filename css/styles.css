@@ -442,6 +442,8 @@ input {
   display: inline-flex;
   align-items: flex-start;
   gap: 56px;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* Body of main page  */

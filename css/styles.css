@@ -337,9 +337,13 @@ input {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  border: 1px solid var(--cornflower);
+  border: none;
   border-radius: 50%;
   outline: none;
+}
+
+.menu-toggle-close {
+  border: 1px solid var(--cornflower);
 }
 
 @media (min-width: 768px) {

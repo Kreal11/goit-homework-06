@@ -259,12 +259,6 @@ input {
   opacity: 1;
 }
 
-@media screen and (min-width: 758px) and (max-width: 1157.98px) {
-  .current::after {
-    bottom: -1px;
-  }
-}
-
 /* Contact information */
 
 .contact-information {

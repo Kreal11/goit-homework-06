@@ -357,7 +357,7 @@ input {
   padding: 32px;
   background-color: #3f51b5;
   z-index: 999;
-
+  padding: 80px 35px 40px 40px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -377,6 +377,8 @@ input {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: block;
+  gap: 40px;
 }
 
 .mobile-menu .link {
@@ -384,6 +386,52 @@ input {
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.link-nav-menu {
+  color: var(--navyblue-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.current-menu {
+  color: var(--ocean-hover-focus);
+}
+
+.contact-information-menu {
+  margin-top: auto;
+  font-style: normal;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.link-menu-phone {
+  color: var(--iris-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.link-menu-email {
+  color: var(--slate-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+
+.icons-menu-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 56px;
 }
 
 /* Body of main page  */
